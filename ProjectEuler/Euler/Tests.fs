@@ -17,4 +17,8 @@ type UnitTest() =
     member x.realAnswer () = 
         sumNums 1000 |> should equal 233168
 
+    [<TestMethod>]
+    member x.fib () = 
+        fibUpTo 90 |> should equal [1; 1; 2; 3; 5; 8; 13; 21; 34; 55; 89]
+
 
